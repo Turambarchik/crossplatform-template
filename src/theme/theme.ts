@@ -1,0 +1,107 @@
+const theme = {
+  colors: {
+    primaryBg: "#FFFFFF",
+    secondaryBg: "#F8F9FB",
+    opacityBg: "rgba(255, 255, 255, 0.8)",
+    thirdBg: "#FFF8F6",
+    neutral: "#D2D2DC",
+    neutral2: "#EDEDF1",
+    green: "#8CC360",
+    borderColor: "#E0E0E7",
+    disabled: "#1D3249",
+    lightBlack: "#0D1115",
+    lightGreen: "#BBDBA2",
+    black: "#000000",
+    dangerColor: "#EF5E37",
+  },
+  components: {
+    typography: {
+      primaryColor: "#0D1115",
+      secondaryColor: "#3E3F47",
+      tertiaryColor: "#FFFFFF",
+      infoColor: "#6A6B79",
+      neutralColor1: "#8F8F9C",
+      neutralColor2: "#87889A",
+      neutralColor3: "#9D9EB3",
+      dangerColor: "#EF5E37",
+      black: "#000000",
+    },
+    button: {
+      primaryColor: "#0D1115",
+      secondaryColor: "#FFFFFF",
+      tertiaryColor: "#8CC360",
+      disableColor: "rgba(13, 17, 21, 0.2)",
+      lightBlack: "#0D1115",
+    },
+    chip: {
+      primaryColor: "#0D1115",
+      secondaryColor: "#F8F9FB",
+      in_progress: "#CCE7F8",
+      consideration: "#D9DAED",
+      complete: "#BBDBA2 ",
+      new: "#FCEA8A",
+      canceled: "#FFE0D7",
+    },
+    point: {
+      primaryColor: "#BBDBA2",
+    },
+  },
+  iconColors: {
+    white: "#FFFFFF",
+    black: "#000000",
+    gray: "#D2D2DC",
+    darkGrey: "#3E3F47",
+    green: "#8CC360",
+    neutralColor2: "#87889A",
+    lightBlack: "#0D1115",
+  },
+  opacity: {
+    default: 1,
+    disabled: 0.2,
+    active: 0.7,
+  },
+  fonts: {},
+  fontSizes: {
+    fz8: 8,
+    fz11: 11,
+    fz12: 12,
+    fz14: 14,
+    fz16: 16,
+    fz18: 18,
+    fz20: 20,
+    fz22: 22,
+    fz24: 24,
+    fz32: 32,
+  },
+  fontWeight: {
+    fw300: "e-Ukraine-Light",
+    fw400: "e-Ukraine-Regular",
+    fw500: "e-Ukraine-Medium",
+    fw700: "e-Ukraine-Bold",
+  },
+  shadows: {
+    card: {
+      shadowColor: "#13294b",
+      shadowOffset: {
+        width: 0,
+        height: 2,
+      },
+      shadowOpacity: 0.25,
+      shadowRadius: 3.84,
+      elevation: 2,
+    },
+
+    button: {
+      shadowColor: "#13294b",
+      shadowOffset: {
+        width: 0,
+        height: 1,
+      },
+      shadowOpacity: 0.25,
+      shadowRadius: 2.65,
+      elevation: 2,
+    },
+  },
+};
+
+export default theme;
