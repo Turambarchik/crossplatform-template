@@ -4,7 +4,7 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 platform :ios, '12.4'
 install! 'cocoapods', :deterministic_uuids => false
 
-abstract_target 'dim9000CommonPods' do
+abstract_target 'appnameCommonPods' do
   config = use_native_modules!
 
   # Flags change depending on the env values.
@@ -45,13 +45,13 @@ abstract_target 'dim9000CommonPods' do
   pod 'RNPermissions', :path => '../node_modules/react-native-permissions'
 
 
-  target 'dim9000' do
+  target 'appname' do
   end
 
-  target 'dim9000Dev' do
+  target 'appnameDev' do
   end
 
-  target 'dim9000Tests' do
+  target 'appnameTests' do
     inherit! :complete
     # Pods for testing
   end

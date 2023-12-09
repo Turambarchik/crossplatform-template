@@ -149,23 +149,23 @@ android {
     productFlavors {
         production {
             minSdkVersion rootProject.ext.minSdkVersion
-            applicationId "com.dim9000"
-            manifestPlaceholders = [appLabel: 'Dim 9000']
+            applicationId "com.appname"
+            manifestPlaceholders = [appLabel: 'AppName']
             targetSdkVersion rootProject.ext.targetSdkVersion
-            resValue "string", "build_config_package", "com.dim9000"
+            resValue "string", "build_config_package", "com.appname"
         }
         development {
             minSdkVersion rootProject.ext.minSdkVersion
-            applicationId "com.dim9000.dev"
-            manifestPlaceholders = [appLabel: 'Dim9000Dev']
+            applicationId "com.appname.dev"
+            manifestPlaceholders = [appLabel: 'appnameDev']
             targetSdkVersion rootProject.ext.targetSdkVersion
-            resValue "string", "build_config_package", "com.dim9000"
+            resValue "string", "build_config_package", "com.appname"
             versionCode 5
             versionName "1.0.2"
         }
     }
     defaultConfig {
-        applicationId "com.dim9000"
+        applicationId "com.appname"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 2

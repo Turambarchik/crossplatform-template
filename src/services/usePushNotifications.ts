@@ -44,7 +44,7 @@ export type CommonModalSheetProps = Partial<Record<"isOpen", boolean>>;
 export const onDisplayNotification = async (message: any) => {
   PushNotification.createChannel(
     {
-      channelId: "Dim9000",
+      channelId: "appname",
       channelName: "My channel",
     },
     (created) => console.warn(`createChannel returned '${created}'`)
@@ -53,7 +53,7 @@ export const onDisplayNotification = async (message: any) => {
   if (message.data.type === PushedMessageType.Order) {
     const orderData: PushNotificationOrderDataType = message.data;
     PushNotification.localNotification({
-      channelId: "Dim9000",
+      channelId: "appname",
       title:
         orderData.objectStatus === StatusOrderType.completed
           ? "Заявка завершена"
@@ -86,7 +86,7 @@ export const onDisplayNotification = async (message: any) => {
   if (message.data.type === PushedMessageType.Announce) {
     const announceData: PushNotificationAnnounceDataType = message.data;
     PushNotification.localNotification({
-      channelId: "Dim9000",
+      channelId: "appname",
       title: `${pushNewsTitleConverter(announceData.objectType)}`,
       message: `${pushNewsBodyConverter(announceData.objectType)}`,
       userInfo: {
